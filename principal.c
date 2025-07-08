@@ -27,5 +27,3 @@
 //Array de pixels
 uint16_t *ppix = (uint16_t *)(VGA_BASE);
 
-//Variavel global que guarda a cor atual
-uint16_t cor_atual = BLACK;
