@@ -52,21 +52,21 @@ void set_pixel(int linha, int coluna){
 	}
 }
 
+//Seta a cor de fundo do VGA 
+void muda_cor_fundo(){
+	for (int y = 0; y < 240; y++) {
+        for (int x = 0; x < 320; x++) {
+            set_pixel(y, x);
+        }
+    }
+}
+
 //Funcao de delay
 void delay(unsigned int tempo_delay){
     volatile unsigned int i, j;
     for (i = 0; i < tempo_delay; i++) {
         for (j = 0; j < 10000; j++) {
             // Só para gastar tempo
-        }
-    }
-}
-
-//Seta a cor de fundo do VGA 
-void muda_cor_fundo(){
-	for (int y = 0; y < 240; y++) {
-        for (int x = 0; x < 320; x++) {
-            set_pixel(y, x);
         }
     }
 }
@@ -141,4 +141,3 @@ int main(){
 	//}
 	return 0;
 }
-
