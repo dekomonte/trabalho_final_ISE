@@ -591,8 +591,8 @@ void fim_de_jogo(int pontos) {
     char texto_pontos[10];
     sprintf(texto_pontos, "%d", pontos);
     desenhar_texto(texto_pontos, (SIZE_X - calcular_largura_texto(texto_pontos)) / 2, 130, WHITE);
-    desenhar_texto("KEY1 MENU", (SIZE_X - calcular_largura_texto("KEY1 MENU")) / 2, 180, YELLOW);
-    desenhar_texto("KEY0 SAIR", (SIZE_X - calcular_largura_texto("KEY0 SAIR")) / 2, 160, CYAN);
+    desenhar_texto("KEY1 MENU", (SIZE_X - calcular_largura_texto("KEY1 MENU")) / 2, 160, YELLOW);
+    desenhar_texto("KEY0 SAIR", (SIZE_X - calcular_largura_texto("KEY0 SAIR")) / 2, 180, CYAN);
 
     while (1) {
         if (buttons == NULL) { 
@@ -625,8 +625,8 @@ void menu_inicial() {
     
     // Desenha as mensagens estáticas UMA VEZ
     desenhar_texto("SNAKE GAME", (SIZE_X - calcular_largura_texto("SNAKE GAME")) / 2, 50, YELLOW);    
-    desenhar_texto("KEY1   START", (SIZE_X - calcular_largura_texto("KEY1  START")) / 2, 120, GREEN);
-    desenhar_texto("KEY0    END", (SIZE_X - calcular_largura_texto("KEY0   END")) / 2, 100, RED);
+    desenhar_texto("KEY1   START", (SIZE_X - calcular_largura_texto("KEY1  START")) / 2, 100, GREEN);
+    desenhar_texto("KEY0    END", (SIZE_X - calcular_largura_texto("KEY0   END")) / 2, 120, RED);
     
     while (1) {
         if (buttons == NULL) { 
